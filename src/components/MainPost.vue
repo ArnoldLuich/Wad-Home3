@@ -13,22 +13,25 @@
 <img alt="Post" class= "postpic" src ="@/assets/pic1.jpg">
   </v-bind>
 </div3><br>
-
-<span class="PostText"> {{product.postText}} </span>
-<button v-on:click="DecreasePrice">Like</button>
- <span class="price"> {{product.like}} </span> </p>
-</div>
+   <span class="PostText"> {{ product.postText }} </span>
+   <button v-on:click="DecreasePrice(product.id)">Like</button>
+   <span class="price"> {{ product.like }} </span>
+ </p>
+ </div>
 </template>
-
 
 <script>
 export default {
- name: "MainPost",
-methods: {
-DecreasePrice() {
-this.$store.state.productList.forEach(product => {
- product.like += 1;});}
-},
+  name: "MainPost",
+  methods: {
+    DecreasePrice(clicked_id) {
+      this.$store.state.productList.forEach((product) => {
+        if (product.id === clicked_id) {
+          product.like += 1;
+        }
+      });
+    },
+  },
 
 computed: {
 productList(){

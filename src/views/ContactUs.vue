@@ -1,6 +1,6 @@
 <template>
   <div class="contactUs">
-    <span> Tel: 5555555555 </span><br>
+    <span> Tel: 555555555 </span><br>
     <span> Email: random@gmail.com </span><br>
     <span>Location: Narva mnt 18 </span>
     
