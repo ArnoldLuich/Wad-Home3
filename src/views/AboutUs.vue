@@ -1,6 +1,7 @@
 <template>
   <div class="aboutUs">
-    <h1>This is an about page2</h1>
+    <h1>Welcome to Postit</h1>
+    <h2>Get to know about Website</h2>
     <Footer></Footer>
   </div>
 </template>

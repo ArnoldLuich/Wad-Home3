@@ -1,6 +1,9 @@
 <template>
   <div class="contactUs">
-    <h1>This is an about page</h1>
+    <span> Tel: 5555555555 </span><br>
+    <span> Email: random@gmail.com </span><br>
+    <span>Location: Narva mnt 18 </span>
+    
     <Footer></Footer>
   </div>
 </template>
