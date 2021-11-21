@@ -3,18 +3,18 @@
  <p class="item" v-for="product in productList" :key="product.id">
      
 <div2 class="user" >
-<img alt="User" src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+<img alt="User" class="userpic" src="@/assets/user.png">
 </div2><br>
 <span class="time"> {{product.time}} </span><br><br>
 
 <!--<span v-if!=null class="PostPic">  <img alt="User" src=""> </span>-->
 <div3 class="PostPic" >
   <v-bind>
-<img alt="Post" src ="require(product.postPic)">
+<img alt="Post" class= "postpic" src ="@/assets/pic1.jpg">
   </v-bind>
 </div3><br>
 
-<span class="PostText"> {{product.postText}} </span> 
+<span class="PostText"> {{product.postText}} </span>
 <button v-on:click="DecreasePrice">Like</button>
  <span class="price"> {{product.like}} </span> </p>
 </div>
@@ -81,10 +81,15 @@ return this.$store.state.productList
     float: left;
 }
 
-img {
-  max-width: 6%;
+.userpic{
+  max-width: 10%;
   height: auto;
   float: left
+}
+.postpic{
+  max-width: 99%;
+  height: auto;
+  float: inside;
 }
 .price{
  font-weight: bold;
